@@ -25,7 +25,7 @@ print "\nThis script calculate the \"Proactive Path Provisioning Time\" with bul
 
 print "\nNote:"
 print "      Make sure the SDN controller and mininet is running before start the test."
-print "      Use --fpr option to send bulk flows in single REST request."
+print "      Use --fpr and --bulk_add option to send bulk flows in single REST request."
 print "      Option --NBport and --SBport is mandatory to run the script otherwise"
 print "      script use the default(eth0) interface.\n\n"
 
