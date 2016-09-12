@@ -273,7 +273,7 @@ def main(*argv):
                                   'performance.')
          parser.add_argument('--bulk-delete', dest='bulk_delete', action='store_true', default=False,
                              help='Delete all flows in bulk; default=False')
-         parser.add_argument('--bulkAdd',type=str, default=False,
+         parser.add_argument('--bulk_add',type=str, default=False,
                              help='Install all flows in bulk with single REST; default=False')
          parser.add_argument('--outfile', default='', help='Stores add and delete flow rest api rate; default=""')
   
@@ -285,7 +285,7 @@ def main(*argv):
          No_of_flows = in_args.flows
 	 port1 = in_args.NBport
          port2 =  in_args.SBport
-         bulk = in_args.bulkAdd
+         bulk = in_args.bulk_add
          print in_args
 
 ##Thread start the both tshark capture paralally to capture the "HTTP POST" & "FLOW_MOD".
